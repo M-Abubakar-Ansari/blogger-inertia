@@ -1,26 +1,9 @@
-<script setup lang="ts">
-import { cn } from "@/lib/utils";
-import type { HTMLAttributes } from "vue";
-
-defineOptions({
-  inheritAttrs: false,
-});
-
-interface Props {
-  className?: HTMLAttributes["class"];
-}
-
-const props = defineProps<Props>();
-</script>
-
-<template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 490.75 490.75"
-    v-bind="$attrs"
-    :class="cn('w-8 h-8 fill-current text-red-500', props.className)"
+    class="w-8 h-8 fill-current text-red-500"
   >
-      <g>
+      <g fill='#f00'>
         <path
           d="M289.338,113.93c-9.081,0-16.429,10.077-16.429,22.51c0,12.449,7.349,22.523,16.429,22.523
           c9.08,0,16.422-10.074,16.422-22.523C305.761,124.007,298.418,113.93,289.338,113.93z"
@@ -39,4 +22,3 @@ const props = defineProps<Props>();
         />
       </g>
     </svg>
-</template>
